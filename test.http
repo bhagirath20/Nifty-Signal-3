@@ -1,0 +1,14 @@
+### api/webhook
+
+POST http://localhost:3000/api/webhook
+Content-Type: application/json
+
+{
+    "symbol": "Nifty 50 - 30 April 2025 - call 23200  ",
+    "signal_": "Buy",
+    "price": 2500,
+    "additional_info": "Quick Tradeq"
+    
+}
+
+    # "signal_": "Buy volume: 250000  SL: 210   SP: 2330",
