@@ -183,15 +183,15 @@ footer {
 }
 
 /* Enhanced glow effect for new entries */
-.new-entry-highlight {
+/* .new-entry-highlight {
   position: relative;
   border: 1px solid #5ee2ff !important;
   background-color: #15202b !important;
   box-shadow: 0 0 15px rgba(94, 226, 255, 0.3);
   animation: glow 2s ease-in-out infinite alternate;
-}
+} */
 
-.new-entry-highlight::after {
+/* .new-entry-highlight::after {
   content: "NEW";
   position: absolute;
   top: -10px;
@@ -203,7 +203,7 @@ footer {
   padding: 2px 8px;
   border-radius: 10px;
   letter-spacing: 0.5px;
-}
+} */
 
 @keyframes glow {
   from {
@@ -244,4 +244,9 @@ footer {
 
 #enableNotifications.enabled:hover {
   background-color: #18c88c;
+}
+
+.highlight-timestamp {
+  font-weight: bold;
+  color: #ff9800; /* Or your brand highlight color */
 }

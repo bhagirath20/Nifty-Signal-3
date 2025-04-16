@@ -5,8 +5,8 @@ Content-Type: application/json
 
 {
     "symbol": "Nifty 50 - 30 April 2025 - call 23200  ",
-    "signal_": "Bdduy",
-    "price": 2030,
+    "signal_": "Buy",
+    "price": 200,
     "additional_info": "fdsf"
     
 }
