@@ -4,11 +4,52 @@ POST http://localhost:3000/api/webhook
 Content-Type: application/json
 
 {
-    "symbol": "Nifty 50 - 30 April 2025 - call 23200  ",
-    "signal_": "Buy",
-    "price": 200,
-    "additional_info": "fdsf"
+    "symbol": "NIFTY 50 - 30 April 2025 - call 23200  ",
+    "signal_": "bUY",
+    "price": 300,
+    "additional_info": "DFGSDDF"
     
 }
 
     # "signal_": "Buy volume: 250000  SL: 210   SP: 2330",
+
+# NIFTY.FLAIN.COM/API/WEBHOOK
+
+### api/webhook
+
+POST http://localhost:3000/api/webhook
+Content-Type: application/json
+
+{
+    "symbol": "NIFTY 50 - 30 April 2025 - call 23200  ",
+    "signal_": "SELL",
+    "price": 2540,
+    "additional_info": "DFGSDDF"
+    
+}
+
+### api/webhook
+
+POST http://localhost:3000/api/webhook
+Content-Type: application/json
+
+{
+    "symbol": "NIFTY 50 - 30 April 2025 - call 23200  ",
+    "signal_": "BUY",
+    "price": 2010,
+    "additional_info": "KEM CHO?"
+    
+}
+
+### api/webhook
+
+POST http://localhost:3000/api/webhook
+Content-Type: application/json
+
+{
+    "symbol": "NIFTY 50 - 30 April 2025 - call 23200  ",
+    "signal_": "SELL",
+    "price": 2031,
+    "additional_info": "STOP LOSS - 2030. HAHAHA"
+    
+}

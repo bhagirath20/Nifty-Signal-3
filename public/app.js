@@ -19,6 +19,38 @@ document.addEventListener("DOMContentLoaded", () => {
     return date.toLocaleString();
   };
 
+  // --- Scroll Buttons ---
+  const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+  const scrollToBottomBtn = document.getElementById("scrollToBottomBtn");
+
+  // Show/hide buttons based on scroll position
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 100) {
+      scrollToTopBtn.style.display = "block";
+    } else {
+      scrollToTopBtn.style.display = "none";
+    }
+    // Show bottom button if not at the bottom
+    if (
+      window.innerHeight + window.scrollY <
+      document.body.offsetHeight - 100
+    ) {
+      scrollToBottomBtn.style.display = "block";
+    } else {
+      scrollToBottomBtn.style.display = "none";
+    }
+  });
+
+  // Scroll to top
+  scrollToTopBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
+  // Scroll to bottom
+  scrollToBottomBtn.addEventListener("click", () => {
+    window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+  });
+
   /**
    * Gets the date part of a timestamp for tracking numbering by date
    * @param {number} timestamp - The timestamp to extract date from
