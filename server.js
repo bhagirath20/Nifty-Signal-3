@@ -32,7 +32,7 @@ const pool = mysql.createPool({
 // Verify MySQL connection
 pool.getConnection((err, connection) => {
   if (err) {
-    console.error("Error connecting to MySQL:", err);
+    console.error("Database connection failed:", err);
     process.exit(1);
   }
   console.log("Connected to MySQL database!");
